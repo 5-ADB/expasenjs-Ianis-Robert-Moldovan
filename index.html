@@ -20,26 +20,27 @@
           <label for="password">Password</label>
           <input type="password" id="password" name="password" />
 
-          <button id="registreer">Registreer</button>
+          <button id="registreerBtn">Registreer</button>
         </div>
         <hr />
         <h2>User List</h2>
         <div id="filterForm">
           <label for="filter">Filter</label>
           <input type="text" id="filter" name="filter" />
-          <button id="filter">Filter</button>
+          <button id="filterBtn">Filter</button>
         </div>
-        <ul>
-          <li>
+        <ul id="printNaampjes" class="lijstUsers">
+          <li id="verwijderenJohn">
             <span class="username">JohnDoe</span>
             <span class="email">johndoe@example.com</span>
           </li>
-          <li class="dubbelUser">
+          <li id="dubbelUser" class="dubbelUser">
             <span class="username">JohnDoe</span>
             <span class="email">johndoe@example.com</span>
           </li>
         </ul>
       </div>
     </div>
+    <script src="./script/script.js"></script>
   </body>
 </html>
