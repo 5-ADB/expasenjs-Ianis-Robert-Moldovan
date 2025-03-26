@@ -42,20 +42,14 @@ registreerBtn.addEventListener("click", () => {
     email: nieuweMail.value,
     password: nieuweWachtwoord.value,
   }
+  nieuweNaam.value = ""
+  nieuweMail.value = ""
+  nieuweWachtwoord.value = ""
+
   users.push(nieuweUser)
+  console.log(users);
 }) 
+
 
 // john weg
 namenPrint = johnWeg.innerHTML = ""
-
-// namen printen in de li
-function namenWeergeven () {
-  namenPrint.innerHTML = "";
-  users.forEach((naam, index) => {
-    let li = document.createElement("li")
-    li.textContent = `${users.fullname} - ${users.email}`
-    namenPrint.appendChild(li)
-  })
-}
-
-
